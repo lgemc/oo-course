@@ -2,7 +2,7 @@ package actividad8punto1;
 
 public class Operaciones {
 
-    public nodo añadir(nodo cabeza, nodo nuevo) {
+    public nodo añadirAlFinal(nodo cabeza, nodo nuevo) {
         if (cabeza != null) {
             nodo recorrer = cabeza;
             while (recorrer.siguiente != null) {
@@ -16,8 +16,7 @@ public class Operaciones {
         return cabeza;
     }
 
-    public nodo añadir2(nodo cabeza, nodo nuevo) {
-
+    public nodo añadirAlInicio(nodo cabeza, nodo nuevo) {
         nodo recorrer = cabeza;
         nodo Cabeza1 = null;
         Cabeza1 = new nodo();
