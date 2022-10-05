@@ -8,9 +8,9 @@ package actividad9;
  *
  * @author lmanrique
  */
-public class ListaDoblementeEnlazada {
-    private Nodo cabeza;
-    private Nodo cola;
+public class ListaDoblementeEnlazada<T> {
+    private Nodo<T> cabeza;
+    private Nodo<T> cola;
     
     // al inicio ambos, cabeza y cola estarán vacios
     ListaDoblementeEnlazada() {
@@ -39,6 +39,19 @@ public class ListaDoblementeEnlazada {
         
     private boolean hayNodos() {
         return this.cabeza != null;
+    }
+    
+    public boolean existe(T elemento) {
+        Nodo actual = this.cabeza;
+        while(actual != null) {
+            if(actual.info == elemento) {
+                return true;
+            }
+            
+            actual = actual.siguiente;
+        }
+        
+        return false;
     }
     
     public void añadirNodo(Nodo nodo) {

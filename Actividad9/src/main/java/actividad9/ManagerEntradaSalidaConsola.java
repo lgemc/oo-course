@@ -19,4 +19,10 @@ public class ManagerEntradaSalidaConsola {
 
         return reader.readLine();
     }
+    
+    public static Integer leerInt() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        return Integer.valueOf(reader.readLine());
+    }
 }
