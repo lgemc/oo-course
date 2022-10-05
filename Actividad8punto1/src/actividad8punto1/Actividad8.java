@@ -39,7 +39,6 @@ public class Actividad8 {
                 nodo nodo = new nodo();
                 System.out.println("ingrese un numero:");
                 nodo.informacion.numero = Leer.dato();
-
                 Cabeza = new Operaciones().añadirAlFinal(Cabeza, nodo);
             } else if (opcion == 2) {
                 nodo nodo = new nodo();
