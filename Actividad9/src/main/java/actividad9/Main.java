@@ -5,6 +5,6 @@ package actividad9;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("holi");
+        Taller9.punto1();
     }
 }

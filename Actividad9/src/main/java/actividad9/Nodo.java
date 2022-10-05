@@ -6,5 +6,15 @@ package actividad9;
  */
 public class Nodo {
     public int info;
-    public Nodo sig,ant;
+    public Nodo siguiente, anterior;
+    
+    public Nodo(int valor) {
+        this.info = valor;
+    }
+    
+    public Nodo() {
+        this.info = 0;
+        this.siguiente = null;
+        this.anterior = null;
+    }
 }
