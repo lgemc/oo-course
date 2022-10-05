@@ -8,18 +8,22 @@ package actividad9;
  *
  * @author lmanrique
  */
-public class ConstructorDeListas {
+public class ListaDoblementeEnlazada {
     private Nodo cabeza;
     private Nodo cola;
     
     // al inicio ambos, cabeza y cola estarán vacios
-    ConstructorDeListas() {
+    ListaDoblementeEnlazada() {
         cabeza = null;
         cola = cabeza;
     }
     
     public Nodo cabeza() {
         return this.cabeza;
+    }
+    
+    public Nodo cola() {
+        return this.cola;
     }
     
     // caso especial donde la cabeza y la cola son el mismo

@@ -17,12 +17,12 @@ public class ManejadorDeListasDoblementeEnlazadas {
     public static Nodo crearListaDeImpares(int numeroInicial, int numeroFinal) {
         ArrayList<Integer> impares = ManejadorDeListasDeNumeros.crearArrayDeImpares(numeroInicial, numeroFinal);
         
-        ConstructorDeListas constructor = new ConstructorDeListas();
+        ListaDoblementeEnlazada lista = new ListaDoblementeEnlazada();
         
         for(Integer infoParaElNodo: impares) {
-            constructor.añadirNodo(new Nodo(infoParaElNodo));
+            lista.añadirNodo(new Nodo(infoParaElNodo));
         }
         
-        return constructor.cabeza();
+        return lista.cabeza();
     }
 }
