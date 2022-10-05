@@ -6,5 +6,6 @@ package actividad9;
 public class Main {
     public static void main(String[] args) {
         Taller9.punto1();
+        Taller9.punto2();
     }
 }
